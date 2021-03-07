@@ -1,38 +1,104 @@
+@font-face {
+    font-family: uthmanichafs1;
+    src: url(https://cdn.qurancdn.com/assets/quran_fonts/UthmanicHafs1/UthmanicHafs1Ex1Ver12-562d8933cdd0ca397f8b8932e4eeda5fccb003bd218002f4820c9c8dd1484ad5.otf);
+    font-display: swap
+}
+@font-face {
+    font-family: me_quran;
+    src: url(https://cdn.qurancdn.com/assets/quran_fonts/me_quran/me_quran-1732107ad645a8c3627904ca06e836ee9435287341fca4027c0d7360d57f29ea.ttf);
+    font-display: swap
+}
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
 .App {
-  text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    background: linear-gradient( to left, #0de8f01f,rgba(255, 196, 0, 0.171)) ;
+}
+a{
+    text-decoration: none !important;
+    color: #00d6d6 !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text {
+    font-family: me_quran;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.suraCard {
+    background: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.myCard2> p:first-child {
+    font-family: uthmanichafs1;
+    font-size: 40px;
+    color: rgb(0, 153, 255);
+}
+.myCard2> p:nth-child(2) {color: orange;}
+.myCard1 {font-weight: 800; color: #6d623f;}
+.myCard3 {font-weight: 800; color: #6d623f;}
+.audio {box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); border-radius: 30px;}
+.myCard{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 10px 20px 0 20px;
+}
+.myCard:hover {
+    box-shadow: 3px 3px 12px rgba(104, 133, 141, 0.5);
+    cursor: pointer;
+}
+#number{
+    background: cyan;
+    color: #fff;
+    border-radius: 6px 0 4px 0;
+    padding: 1px 5px;
+    position: relative;
+    top: -10px;
+    left: -21px;
+    border: none;
+}
+.rowLeft h4{
+    font-size: 20px;
+}
+.rowLeft h5{
+    font-size: 15px;
+}
+.rowLeft p{
+    font-size: 12px;
 }
 
-.App-link {
-  color: #61dafb;
+.rowRight {text-align: right;}
+.rowRight h3{
+    font-family: me_quran;
+}
+.rowRight p{
+    font-size: 12px;
+    margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.number{
+    top: -150px;
+    position: relative;
+}
+@-moz-document url-prefix(){
+    .number{
+        top: -13px;
+    }
+}
+@media (max-width: 767px){
+    .suraCard {flex-direction: column-reverse;}
+}
+@media (min-width: 992px){
+    .number {top: 0;}
+}
+
+/* Material UI Modification */
+@media (max-width: 600px) {
+.makeStyles-title-4 {
+    display: block !important;
+    }
 }
