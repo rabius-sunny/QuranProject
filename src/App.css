@@ -124,3 +124,8 @@ a{
     display: block !important;
     }
 }
+@media (min-width: 300px) {
+.jss4 {
+    display: block;
+    }
+}
