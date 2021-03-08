@@ -119,7 +119,7 @@ a{
 }
 
 /* Material UI Modification */
-@media (max-width: 600px) {
+@media (min-width: 300px) {
 .makeStyles-title-4 {
     display: block !important;
     }
